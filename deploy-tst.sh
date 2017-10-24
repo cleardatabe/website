@@ -1,0 +1,1 @@
+aws s3 sync . s3://test.cleardata.be --exclude ".git/*" --delete
