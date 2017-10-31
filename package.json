@@ -1,4 +1,13 @@
 {
   "name": "cleardata_be_website",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-debug": "^3.1.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.4.0"
+  }
 }
