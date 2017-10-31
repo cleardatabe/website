@@ -5,9 +5,10 @@ node_js:
 
 before_script:
   - npm install -g gulp-cli
-script: gulp && ls -Rl
+script: gulp
   
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJZWEP5SCRJAFQN4A
   bucket: test.cleardata.be  
@@ -19,6 +20,7 @@ deploy:
   on:
     branch: master
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJZWEP5SCRJAFQN4A
   bucket: www.cleardata.be  
