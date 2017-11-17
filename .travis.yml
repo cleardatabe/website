@@ -7,9 +7,9 @@ before_script:
   - npm install -g gulp-cli
 script: gulp
   
-deploy:
+deploy:  
+- provider: s3
   skip_cleanup: true
-  provider: s3
   access_key_id: AKIAJZWEP5SCRJAFQN4A
   bucket: test.cleardata.be  
   region: eu-central-1
@@ -19,9 +19,8 @@ deploy:
     secure: ew1Y6q0mqZ3EJ1ouaM3cHmbV7tKraYcpu6AYC9cpw1VQ4J3bIfLw08FBs7Vve6cfEujMxSIT6vtJrhWQzTAIZqK8QwHg4FIjwHY3/TJd8lbdLVTgNUA4c1icreQJ4Dbza103EMhh0j+1Szamddm2QOuncI80l4uPzLZjtpV7B2ospsDSCvXnDyjKfZihSB0LuFe9wG/C0GTuUMVtvj6XA9eWo6gcHPmxdL3U0ZU0keygpeLPNGT7+2nzkEpHdACy1gUH2NqF6wjUQ3h6gEYsZcaCKZxx1UZS655Wi1gBDV/zyNFjoykc9P2bi5SxRKN5yM967328zc0IWj58/G/NCmMJmfPc7I/drMuZmu5/3sh+EKmac1DbdzC1TpkGv7tukp0RDbZ+nWQ4NzeAdFl5SfbsZhnCj3hIRElkivLdM3YtRhgIdyHDRhlq1iVp3fSax2t/WVWCGykNLFP1LksRv9aACcgMaYBod781Uv6b7qaDXNCL/RSbhPUhvYrtyCOeI+fryGSKCy8s5+fvfSR4yeuHf++ZG0gFk4avr5AqFV1Lxbdp6EsKsS3zD5soIDUENe1tIumMVTg68+Td73p20gywhtSw+UeQBEHp90BMeKOuHcM40FhoEW3kftNwVNrXTdXnvYCkKNh4+iquwEUn0XTxUQ8UUb9w177BsBrhz7k=
   on:
     branch: master
-deploy:
+- provider: s3
   skip_cleanup: true
-  provider: s3
   access_key_id: AKIAJZWEP5SCRJAFQN4A
   bucket: www.cleardata.be  
   region: eu-west-1
