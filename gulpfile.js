@@ -43,7 +43,10 @@ gulp.task('copy', function() {
 	
 	var js = gulp.src('js/**')
 				.pipe(gulp.dest('dist/js'))
-	
+
+	var docs = gulp.src('docs/**')
+				.pipe(gulp.dest('dist/docs'))
+				
 	return es.concat(ico, fa, js);
 });
 
