@@ -5,8 +5,9 @@ const debug = require('gulp-debug');
 const del = require('del');
 const imagemin = require('gulp-imagemin');
 const es = require('event-stream');
+var nunjucks = require('gulp-nunjucks-render');
 
-gulp.task('default', ['copy','minify', 'minify-css', 'imagemin']);
+gulp.task('default', ['copy','html-templates', 'minify-css', 'imagemin']);
 
 gulp.task('minify-css', () => {
   return gulp.src('css/*.css')
@@ -14,9 +15,12 @@ gulp.task('minify-css', () => {
     .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('minify', function() {
+gulp.task('html-templates', function() {
   return gulp.src('*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+  	.pipe(nunjucks({
+		path: ['.'] // String or Array 
+  	}))
+    //.pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
 });
 
