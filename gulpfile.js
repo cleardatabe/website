@@ -20,7 +20,7 @@ gulp.task('html-templates', function() {
   	.pipe(nunjucks({
 		path: ['.'] // String or Array 
   	}))
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
     .pipe(gulp.dest('dist'));
 });
 
