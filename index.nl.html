@@ -209,4 +209,24 @@ Bekijk ook onze <a href="sample-projects.nl.html">voorbeeldprojecten</a>!
         </div>
     </section>
 
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#edeff5",
+        "text": "#838391"
+        },
+        "button": {
+        "background": "#4b81e8"
+        }
+    },
+    "content": {
+        "message": "Door te surfen op onze website accepteer je het gebruik van cookies. Een cookie is een klein tekstbestand dat ons toelaat het gebruik van deze website te optimaliseren.",
+        "dismiss": "OK",
+        "link": "Meer info"
+    }
+    })});
+    </script>
+
     {% endblock %}    
