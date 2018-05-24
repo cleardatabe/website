@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ lang }}">
+<html lang="en">
 
 <head>
     {% include "partials/analytics.html" %}
@@ -63,26 +63,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-
-    <script>
-    window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-    "palette": {
-        "popup": {
-        "background": "#edeff5",
-        "text": "#838391"
-        },
-        "button": {
-        "background": "#4b81e8"
-        }
-    },
-    "content": {
-        "message": {{ cookietext }},
-        "dismiss": {{ cookieok }},
-        "link": {{ cookiemore }}
-    }
-    })});
-    </script>
 
 </body>
 
