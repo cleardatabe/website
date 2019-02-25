@@ -132,12 +132,12 @@ section#cases div {
     font-size: 34px;
 }
 .reaction blockquote:before{
-    content: "\f10d";
+    content: "<i class="fas fa-quote-left"></i>";
     margin-right: 13px;
     right: 100%;
 }
 .reaction blockquote:after{
-    content: "\f10e";
+    content: "<i class="fas fa-quote-right"></i>";
     margin-left: 13px;
     left: 100%;  
 }
