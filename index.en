@@ -145,7 +145,7 @@
                     <hr class="light">
                     <p class="text-faded text-justify">
 Het bewustzijn groeit dat door correcte analyse van geregistreerde gegevens nuttige en objectieve inzichten bekomen worden. Wij geven een helder inzicht in verzamelde data en vertellen het verhaal achter de cijfers. Hieruit kunnen bijvoorbeeld praktijkacties voortvloeien die de werking van een organisatie, praktijk of bedrijf verbeteren.
-There is growing awareness that one obtains useful and objective insights by accurate analysis of registered data. We give a clear insight in collected data and tell the story behind the numbers. Doing so, actions may emerge from this story which improve the functioning of an organization, practice or company.
+There is growing awareness that one gains useful and objective insights by accurate analysis of registered data. We give a clear insight in collected data and tell the story behind the numbers. Doing so, actions may emerge from this story which improve the functioning of an organization, practice or company.
 					<p class="text-faded text-justify">
 Concreet streven we naar 1) meer kennis, 2) een hogere kwaliteit van producten, zorg- of dienstverlening en 3) meer tevredenheid van interne en externe partners.
 					</p>
@@ -311,13 +311,7 @@ Bekijk ook onze <a href="sample-projects.nl.html">voorbeeldprojecten</a>!
 					</p>
                 </div>
 			</div>	
-			<div class="row">	
-                <div class="col-lg-3 text-center">
-                    <a target="_blank" href="https://www.google.be/maps/place/ClearData/@51.0367335,3.6915578,17z/data=!3m1!4b1!4m5!3m4!1s0x47c373d5e244c623:0x12ceb2b0b9fe9577!8m2!3d51.0367335!4d3.6937465">
-                    <i class="fa fa-map-marker fa-3x wow bounceIn"></i>
-                    <p>Jozef Cantréstraat 8<br/>9000 Gent</p>
-                    </a>
-                </div>
+			
                 <div class="col-lg-3 text-center">
                     <a href="tel:+32498137976">
                     <i class="fa fa-phone fa-3x wow bounceIn" data-wow-delay=".1s"></i>
