@@ -1,0 +1,35 @@
+name: Publish
+
+on: [push, workflow_dispatch]
+
+env:
+  BUCKET: ${{ github.ref == 'refs/heads/live' && 'www.cleardata.be' || 'test.cleardata.be' }}
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '8.x'
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install Gulp
+      run: npm install -g gulp-cli
+    - name: Install NPMs
+      run: npm install
+    - name: Run Gulp
+      run: gulp
+    - name: Setup AWS CLI
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: arn:aws:iam::777373209812:role/GithubActionsS3
+        aws-region: eu-central-1
+    - name: Sync files to S3 bucket
+      run: |
+        aws s3 sync dist s3://$BUCKET --exclude ".git/*" --delete
